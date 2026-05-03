@@ -1,3 +1,4 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -6,6 +7,13 @@ import os
 load_dotenv()
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # frontend
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -31,7 +39,8 @@ async def analyze_image(file: UploadFile = File(...)):
     4. Suggest 3 related topics the student should learn next.
     5. Suggest 3 YouTube search queries for learning this material.
 
-    Return the response strictly in this JSON format:
+    Return ONLY valid JSON. Do not include backticks or markdown formatting. 
+    Do not add any explanation before or after the JSON.
 
     {
       "extracted_text": "...",
