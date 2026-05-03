@@ -45,31 +45,34 @@ NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture
 
 ### 1. Clone the repo
 
+```bash
 git clone https://github.com/aanilgeo/noteflix.git
 cd noteflix
+```
 
 ---
 
 ### 2. Backend Setup
-
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate
-
-pip install -r requirements.txt
+```
 
 Create .env file:
-
+```bash
 GEMINI_API_KEY=your_api_key_here
+```
 
 Run backend:
-
+```bash
 uvicorn main:app --reload
-
+```
 ---
 
 ### 3. Frontend Setup
-
+```bash
 cd ../frontend
 npm install
 npm run dev
+```
