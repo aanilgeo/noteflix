@@ -1,6 +1,6 @@
 # NoteFlix
 
-NoteFlix is an AI-powered web app that converts handwritten or printed lecture notes into structured summaries, key concepts, and personalized study recommendations using multimodal LLMs.
+NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture notes into structured summaries, key concepts, and personalized study recommendations using Google Gemini multimodal AI.
 
 ---
 
