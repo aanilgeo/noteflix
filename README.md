@@ -6,14 +6,14 @@ NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture
 ## 📸 Demo
 
 ### 🏠 Home / Upload
-![Home](frontend/public/home.png)
+<img src="frontend/public/home.png" width="700"/>
 
 ### ⏳ Loading State
-![Loading](frontend/public/loading.png)
+<img src="frontend/public/loading.png" width="700"/>
 
 ### 📊 Study Feed Output
-![Results_1](frontend/public/results_1.png)
-![Results_2](frontend/public/results_2.png)
+<img src="frontend/public/results_1.png" width="700"/>
+<img src="frontend/public/results_2.png" width="700"/>
 
 ---
 
