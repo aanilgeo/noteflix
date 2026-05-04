@@ -1,17 +1,18 @@
 # NoteFlix
 
-NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture notes into structured summaries, key concepts, and personalized study recommendations using Google Gemini API.
+NoteFlix is an AI-powered full-stack web app that transforms lecture notes into structured summaries, key concepts, and personalized study recommendations using the Google Gemini API.
 
 ---
 ## 📸 Demo
+End-to-end flow: upload → AI processing → structured study feed
 
-### 🏠 Home / Upload
+### Home / Upload
 <img src="frontend/public/home.png" width="700"/>
 
-### ⏳ Loading State
+### Loading State
 <img src="frontend/public/loading.png" width="700"/>
 
-### 📊 Study Feed Output
+### Results / Study Feed
 <img src="frontend/public/results_1.png" width="700"/>
 <img src="frontend/public/results_2.png" width="700"/>
 
@@ -20,12 +21,12 @@ NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture
 ## 🚀 Features
 
 - Upload an image of handwritten or printed notes
-- Extracts text using AI
+- Extracts text from images using AI
 - Generates:
-  - 📌 Summary (bullet points)
-  - 🧠 Key Concepts
-  - 🚀 Related Topics to explore
-  - 🎥 YouTube learning suggestions
+  - Summary (bullet points)
+  - Key Concepts
+  - Related Topics to explore
+  - YouTube learning suggestions
 - Clean, modern study dashboard UI
 - Real-time analysis with loading states
 
@@ -39,7 +40,7 @@ NoteFlix is an AI-powered full-stack web app that transforms handwritten lecture
 - Tailwind CSS
 
 ### Backend
-- FastAPI (Python)
+- FastAPI (Python REST API)
 - Google Gemini API (Multimodal LLM)
 
 ---
@@ -72,8 +73,8 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-Create .env file:
-```bash
+Create a `.env` file:
+```
 GEMINI_API_KEY=your_api_key_here
 ```
 
@@ -89,3 +90,11 @@ cd ../frontend
 npm install
 npm run dev
 ```
+
+---
+
+## 📌 Future Improvements
+- User authentication
+- Save past study sessions
+- Export summaries as PDF
+- Deploy to cloud (Vercel + Render)
