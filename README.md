@@ -76,3 +76,16 @@ cd ../frontend
 npm install
 npm run dev
 ```
+---
+
+## 📸 Demo
+
+### 🏠 Home / Upload
+![Home](frontend/public/home.png)
+
+### ⏳ Loading State
+![Loading](frontend/public/loading.png)
+
+### 📊 Study Feed Output
+![Results_1](frontend/public/results_1.png)
+![Results_2](frontend/public/results_2.png)
